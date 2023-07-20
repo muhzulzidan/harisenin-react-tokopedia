@@ -103,10 +103,10 @@ const ProductsList: React.FC<ProductsListProps> = () => {
                             <div key={product.id} className='p-4 h-full rounded-md bg-white shadow-md text-lg '>
                                 
                                 <img src={product.image} alt={product.title} style={{ width: '200px', height: '200px' }} />
-                                <h2 >{product.title}</h2>
+                                <h2 className='line-clamp-1' >{product.title}</h2>
                                 <p className='font-bold '>Price: {product.price}</p>
                                 {/* <p>{product.description}</p> */}
-                                <p>Category: {product.category}</p>
+                                <p className='line-clamp-1'>Category: {product.category}</p>
                                 <hr />
                             </div>
                         ))}

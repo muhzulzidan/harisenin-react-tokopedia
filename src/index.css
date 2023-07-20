@@ -23,7 +23,9 @@ code {
 }
 
 @layer utilities {
-  
+  ul.slick-dots{
+    @apply -bottom-10;
+  }
 	.slick-active{
     @apply px-2;
   }
